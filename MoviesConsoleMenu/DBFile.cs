@@ -34,7 +34,7 @@ namespace DBFiles
                         strWhatToWriteToDB.Append(movie.Year + ";");
                         strWhatToWriteToDB.Append(movie.Genre + ";");
                         strWhatToWriteToDB.Append(movie.Rating + ";");
-                        strWhatToWriteToDB.AppendLine(movie.TimeWatched.ToShortDateString());
+                        strWhatToWriteToDB.Append(movie.TimeWatched.ToShortDateString());
                         writer.WriteLine(strWhatToWriteToDB.ToString());
                     }
                     else
